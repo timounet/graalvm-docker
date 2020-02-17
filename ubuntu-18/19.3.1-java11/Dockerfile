@@ -10,6 +10,7 @@ ENV LANG=en_US.UTF-8 \
     JAVA_HOME=/opt/graalvm-ce-$JAVA_VERSION-$GRAALVM_VERSION/
 
 ADD gu-wrapper.sh /usr/local/bin/gu
+ADD run-java.sh /deployments
 RUN apt-get update
 RUN apt-get install curl -y
 RUN apt-get install wget -y
