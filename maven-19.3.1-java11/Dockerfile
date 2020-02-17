@@ -1,8 +1,6 @@
 FROM tperdriau/ubuntu-graalvm:19.3.1-java11
 
 RUN apt-get update
-RUN apt-get install curl -y
-RUN apt-get install wget -y
 
 RUN apt-get install maven -y
 # Clean
