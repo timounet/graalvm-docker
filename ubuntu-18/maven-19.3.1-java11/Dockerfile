@@ -1,5 +1,5 @@
 FROM tperdriau/ubuntu-graalvm:19.3.1-java11
-
+USER root
 RUN apt-get update
 
 RUN apt-get install maven -y
