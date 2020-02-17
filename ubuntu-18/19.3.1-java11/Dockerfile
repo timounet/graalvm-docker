@@ -32,7 +32,7 @@ RUN apt-get install libasound2 -y
 RUN apt-get clean
 RUN apt-get autoclean
 RUN apt-get autoremove
-RUN dpkg --get-selections | grep linux-image
+
 RUN groupadd -r quarkus -g 1001 && useradd -u 1001 -r -g 1001 -m -d /home/quarkus -s /sbin/nologin -c "Quarkus user" quarkus
 USER 1001
 WORKDIR /project
